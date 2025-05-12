@@ -4,8 +4,8 @@ import { defineConfig } from "vite"
  
 export default defineConfig({
    build: {
-    chunkSizeWarningLimit: 1500, // in kB
   },
+  chunkSizeWarningLimit: 1500, // in kB
   plugins: [react()],
   resolve: {
     alias: {
