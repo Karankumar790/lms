@@ -7,7 +7,9 @@ export default defineConfig({
   },
   chunkSizeWarningLimit: 1500, // in kB
   plugins: [react()],
-  resolve: {
+    optimizeDeps: {
+    include: ['react-quill'],
+  },  resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
